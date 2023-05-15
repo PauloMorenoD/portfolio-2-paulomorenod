@@ -43,6 +43,9 @@ export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
   marginTop: "4rem",
+  border: "1px solid gray",
+  padding: "1rem",
+  borderRadius: "$2",
   [`&:first-child`]: {
     [`& ${ProjectTitle}:first-child`]: {
       position: "relative",
@@ -52,23 +55,7 @@ export const Project = styled("article", {
         width: "auto",
       },
 
-      "&::before": {
-        content: 'New',
-        position: "absolute",
-        top: "5px",
-        right: "-4rem",
-        width: "max-content",
-        height: "28px",
-        backgroundColor: "$brand1",
-        padding: "0px 8px",
-        borderRadius: "var(--radii-1)",
-        fontSize: "14px",
-        color: "var(--colors-whiteFixed)",
-        fontWeight: "400",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "Inter",
+    
 
         "@mobile": {
           letf: 0,
@@ -78,4 +65,4 @@ export const Project = styled("article", {
       },
     },
   },
-});
+);
