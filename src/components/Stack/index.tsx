@@ -3,7 +3,7 @@ import { Text } from "@/styles/Text";
 import { IconType } from "react-icons/lib";
 
 interface StackProps {
-  title: string;
+  title: string ;
   icon: string | IconType;
   key: number;
 }

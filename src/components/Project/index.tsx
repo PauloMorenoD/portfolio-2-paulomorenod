@@ -2,15 +2,18 @@ import {
   Project as ProjectWrapper,
   ProjectTitle,
   ProjectStack,
-  ProjectStackTech,
   ProjectLink,
   ProjectLinks,
+  ProjectImg,
 } from "./style";
 
 import { Text } from "@/styles/Text";
 import { useEffect, useState } from "react";
-import { FaGithub, FaShare } from "react-icons/fa";
+import { FaGithub,  } from "react-icons/fa";
+import { AiOutlineLink } from "react-icons/ai";
 import { userData } from "@/utils/userData";
+import { projects } from "@/utils/projectData";
+import { ProjectIcons } from "./ProjectIcons";
 
 interface ReposType {
   id: number;
@@ -43,51 +46,32 @@ export const Project = (): JSX.Element => {
   return (
     <>
       {repositories &&
-        repositories?.map?.((repository) => (
-          <ProjectWrapper key={repository.id}>
+        projects?.map?.((project) => (
+          <ProjectWrapper key={project.id}>
             <ProjectTitle
               as="h2"
               type="heading3"
               css={{ marginBottom: "$3" }}
               color="grey4"
             >
-              {repository.name}
+              {project.name}
             </ProjectTitle>
-
+            <ProjectImg src={project.img} alt=""/>
             <ProjectStack>
-              <Text type="body2" color="grey2">
-                Primary Language:
+              <Text type="body2" color="grey2" css={{ display: "flex", gap: "1rem" }}>
+                Tecnologias utilizadas:
+                {project.techs.map(tech=>(
+                  <ProjectIcons key={Math.random()} icon={tech.img} />
+                ))}
               </Text>
-              {repository.language ? (
-                <ProjectStackTech>
-                  <Text color="grey2" type="body2">
-                    {repository.language}
-                  </Text>
-                </ProjectStackTech>
-              ) : (
-                <ProjectStackTech>
-                  <Text color="grey2" type="body2">
-                    Primary language not identified
-                  </Text>
-                </ProjectStackTech>
-              )}
             </ProjectStack>
-
-            <Text type="body1" color="grey2">
-              {repository.description?.substring(0, 129)}
-            </Text>
             <ProjectLinks>
-              <ProjectLink target="_blank" href={repository.html_url}>
-                <FaGithub /> Github Code
+              <ProjectLink target="_blank" href={project.gitLink}>
+                <FaGithub /> código no github
               </ProjectLink>
-              {repository.homepage && (
-                <ProjectLink
-                  target="_blank"
-                  href={`https://${repository.homepage}`}
-                >
-                  <FaShare /> See demo
-                </ProjectLink>
-              )}
+              <ProjectLink target="_blank" href={project.appLink}>
+                <AiOutlineLink /> ver app
+              </ProjectLink>
             </ProjectLinks>
           </ProjectWrapper>
         ))}

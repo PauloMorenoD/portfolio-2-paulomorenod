@@ -22,6 +22,7 @@ import {
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
 } from "./style";
+import { ProjectIcons } from "@/components/Project/ProjectIcons";
 
 export const Home = () => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
@@ -76,7 +77,7 @@ export const Home = () => {
             </HeaderButtonsArea>
             <StackCards>
               {stackData.map((stack, index) => (
-                <Stack key={index} title={stack.title} icon={stack.img} />
+                <Stack key={index} title={stack.title} icon={stack.img}/>
               ))}
             </StackCards>
           </HeaderContent>
