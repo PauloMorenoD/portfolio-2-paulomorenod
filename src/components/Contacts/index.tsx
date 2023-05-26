@@ -69,7 +69,7 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My email
+                  Meu email
                 </Text>
                 <Text color="grey2" type="body2">
                   Me mande um email com idéias
@@ -95,7 +95,7 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My LinkedIn
+                  Meu LinkedIn
                 </Text>
                 <Text color="grey2" type="body2">
                 nós podemos interagir melhor numa rede social

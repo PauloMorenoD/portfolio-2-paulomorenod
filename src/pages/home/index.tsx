@@ -44,7 +44,7 @@ export const Home = () => {
               <Text color="grey4">Olá, meu nome é {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-              I{" "}
+              Eu{" "}
               <Text as="span" type="heading1" color="brand1">
                 Gosto muito 
               </Text>{" "}

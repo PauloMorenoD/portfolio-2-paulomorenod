@@ -3,15 +3,16 @@ import techHub from "@/public/static/img/projectsImgs/tech-hub.png"
 import burguerNow from "@/public/static/img/projectsImgs/burguer-now.png"
 import vemSaude from "@/public/static/img/projectsImgs/vem-saude.png"
 import companies from "@/public/static/img/projectsImgs/2023-04-29 (1).png"
+import contacts from "@/public/static/img/projectsImgs/contacts.png"
 import { FaCss3, FaHtml5, FaReact } from "react-icons/fa"
-import { SiJavascript, SiStyledcomponents, SiTypescript } from "react-icons/si"
+import { SiJavascript, SiStyledcomponents, SiTypescript, SiNextdotjs, SiTailwindcss, SiNestjs } from "react-icons/si"
 
 
 export const projects = [
     {id: "pokeapp", img:pokeApp, name: "PokeApp", description:"", gitLink:"https://github.com/PauloMorenoD/PokeApp", appLink:"https://pokeapp-paulomorenod.vercel.app", techs:[
         {title:"javascript",img: SiJavascript},
         {title:"HTML5",img: FaHtml5},
-        {img:"CSS3", FaCss3},
+        {title:"CSS3", img: FaCss3},
     ]},
     {id:"vemsaude",img:vemSaude, name: "Vem Saude", description:"", gitLink:"https://github.com/PauloMorenoD/vem-saude-m3", appLink:"https://vem-saude.vercel.app", techs:[
         {title:"react", img: FaReact},
@@ -31,5 +32,12 @@ export const projects = [
         {title:"react", img: FaReact},
         {title:"typescript", img: SiTypescript},
         {title:"styled-components", img: SiStyledcomponents},
+    ]},
+    {id:"companies",img:contacts, name: "Contacts", description:"", gitLink:"https://github.com/PauloMorenoD/projeto-fullstack-frontend", appLink:"" , techs:[
+        {title:"Nest.js", img: SiNestjs},
+        {title:"Next.js", img: SiNextdotjs},
+        {title:"typescript", img: SiTypescript},
+        {title:"styled-components", img: SiTailwindcss},
     ]}
+
 ]

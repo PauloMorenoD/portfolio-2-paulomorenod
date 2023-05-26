@@ -70,6 +70,14 @@ export const Project = styled("article", {
   },
 );
 
+export const ProjectInfoDiv = styled("div",{
+  width: "100vw",
+  height: "100vh",
+  position:"fixed",
+  zIndex: "10000000",
+  backgroundColor:"red"
+})
+
 export const scaleUp = keyframes({
   "0%": { transform: "translateY(15%)" },
   "100%": { transform: "translateY(-140%)" },
