@@ -18,7 +18,7 @@ export const ProjectStackTech = styled("span", {
   borderRadius: "$2",
 });
 
-export const ProjectImg = styled("img",{
+export const ProjectImg = styled("img", {
   width: "100%",
   objectFit: "cover",
   borderRadius: "$2",
@@ -50,33 +50,27 @@ export const ProjectLink = styled("a", {
 
 export const ProjectTitle = styled(Text, {});
 
+export const ProjectInfoDiv = styled("div", {
+  display: "none"
+})
 export const Project = styled("article", {
   marginTop: "4rem",
   border: "1px solid gray",
   padding: "1rem",
   borderRadius: "$2",
-  [`&:first-child`]: {
-    [`& ${ProjectTitle}:first-child`]: {
-      position: "relative",
-      width: "max-content",
+    [`&:first-child`]: {
+      [`& ${ProjectTitle}:first-child`]: {
+        position: "relative",
+        width: "max-content",
 
-      "@mobile": {
-        width: "auto",
-      },
-
-  
+        "@mobile": {
+          width: "auto",
+        },
       },
     },
   },
 );
 
-export const ProjectInfoDiv = styled("div",{
-  width: "100vw",
-  height: "100vh",
-  position:"fixed",
-  zIndex: "10000000",
-  backgroundColor:"red"
-})
 
 export const scaleUp = keyframes({
   "0%": { transform: "translateY(15%)" },

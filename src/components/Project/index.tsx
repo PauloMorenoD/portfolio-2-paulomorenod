@@ -5,7 +5,6 @@ import {
   ProjectLink,
   ProjectLinks,
   ProjectImg,
-  ProjectInfoDiv,
 } from "./style";
 
 import { Text } from "@/styles/Text";
@@ -79,7 +78,6 @@ export const Project = (): JSX.Element => {
             </ProjectWrapper>
           </>
         ))
-
       }
     </>
   );
