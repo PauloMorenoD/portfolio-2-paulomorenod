@@ -5,8 +5,9 @@ import vemSaude from "@/public/static/img/projectsImgs/vem-saude.png"
 import companies from "@/public/static/img/projectsImgs/2023-04-29 (1).png"
 import contacts from "@/public/static/img/projectsImgs/contacts.png"
 import motors from "@/public/static/img/projectsImgs/Capa 34 Motors.jpg"
+import php from "@/public/static/img/projectsImgs/php.png"
 import { FaCss3, FaHtml5, FaReact } from "react-icons/fa"
-import { SiJavascript, SiStyledcomponents, SiTypescript, SiNextdotjs, SiTailwindcss, SiNestjs, SiExpress } from "react-icons/si"
+import { SiJavascript, SiStyledcomponents, SiTypescript, SiNextdotjs, SiTailwindcss, SiNestjs, SiExpress, SiPhp, SiLaravel } from "react-icons/si"
 
 
 export const projects = [
@@ -59,6 +60,13 @@ export const projects = [
             { title: "typescript", img: SiTypescript },
             { title: "tailwind css", img: SiTailwindcss },
         ]
+    },
+    {
+        id: "Academies", img: php, name: "LaravelGym", description: "", gitLink: "https://github.com/PauloMorenoD/dev-php-jr-teste-tecnico", appLink: "", techs: [
+            { title: "php", img: SiPhp },
+            { title: "Laravel", img: SiLaravel },
+        ]
     }
+
 
 ]

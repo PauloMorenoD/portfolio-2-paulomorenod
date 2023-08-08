@@ -22,6 +22,7 @@ export const ProjectImg = styled("img", {
   width: "100%",
   objectFit: "cover",
   borderRadius: "$2",
+  minHeight: "60%",
 })
 
 export const ProjectLinks = styled(Flex, {

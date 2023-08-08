@@ -6,7 +6,9 @@ import {
   SiTailwindcss,
   SiExpress,
   SiDjango,
-  SiNestjs
+  SiNestjs,
+  SiPhp,
+  SiLaravel
 } from "react-icons/si";
 import { FaGit, FaPython } from "react-icons/fa";
 import {
@@ -35,4 +37,6 @@ export const stackData = [
   { title: "PostgreSQL", img: SiPostgresql },
   { title: "Python", img: FaPython },
   { title: "Django", img: SiDjango },
+  { title: "PHP", img: SiPhp },
+  { title: "Laravel", img: SiLaravel },
 ];
